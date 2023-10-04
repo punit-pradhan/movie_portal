@@ -1,0 +1,4 @@
+name: movie-portal
+recipe: drupal10
+config:
+  webroot: web
