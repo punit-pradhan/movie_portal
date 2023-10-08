@@ -1,0 +1,164 @@
+@use "../partials/importers" as *;
+
+content {
+    padding: 0 !important;
+}
+.view-display-id-page_1 {
+    .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // gap: 20px;
+        .views-row {
+            position: relative;
+            padding: 10px;
+            cursor: pointer;
+            &:hover {
+                .views-field-field-movie-img {
+                    .movie-image {
+                        background-color: $Accent_color;
+                    }
+                }
+                .views-field-field-date,
+                .views-field-field-date-1 {
+                    display: block;
+                }
+            }
+            .views-field-field-movie-img {
+                .movie-image {
+                    background-color: $bg-accent-color;
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        opacity: 0.7;
+                        object-fit: cover;
+                        object-position: 100% 35%;
+                    }
+                }
+            }
+            .views-field-title {
+                position: absolute;
+                bottom: 10px;
+                left: 30px;
+                .movie-title {
+                    color: $brand-secondary-color;
+                    font-size: 29px;
+                }
+            }
+            .views-field-field-date {
+                display: none;
+                position: absolute;
+                top: 10px;
+                right: 45px;
+                .field-content {
+                    font-size: 100px;
+                    color: $brand-secondary-color;
+                }
+            }
+            .views-field-field-date-1 {
+                display: none;
+                position: absolute;
+                top: 115px;
+                right: 85px;
+                .movie-month {
+                    color: $brand-secondary-color;
+                    font-size: 24px;
+                    &::after {
+                        display: block;
+                        content: "";
+                        border-top: 3px solid $brand-secondary-color;
+                        width: 70%;
+                        margin: 10px 15% 0 15%;
+                    }
+                }
+            }
+        }
+        .views-row:nth-child(1),
+        .views-row:nth-child(2),
+        .views-row:nth-child(3) {
+            width: 33.33%;
+            padding-top: 0px !important;
+        }
+        .views-row:nth-child(4),
+        .views-row:nth-child(5) {
+            width: 50%;
+        }
+        .views-row:nth-child(6),
+        .views-row:nth-child(7),
+        .views-row:nth-child(8),
+        .views-row:nth-child(9) {
+            width: 25%;
+            padding-bottom: 20px;
+        }
+        .views-row:nth-child(1),
+        .views-row:nth-child(4),
+        .views-row:nth-child(6) {
+            padding-left: 20px;
+        }
+        .views-row:nth-child(3),
+        .views-row:nth-child(5),
+        .views-row:nth-child(9) {
+            padding-right: 20px;
+        }
+    }
+}
+.views-field-field-description {
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7607843137);
+    z-index: 200;
+    display: none;
+
+    .field-content {
+        .movie_popup {
+            width: 70%;
+            position: relative;
+            margin-top: 18% !important;
+            margin: auto;
+            .close_btn {
+                font-size: 22px;
+                top: -10px;
+                right: -10px;
+                color: white;
+                position: absolute;
+            }
+            .movie_card {
+                background-color: $bg-accent-color;
+                display: flex;
+                height: 300px;
+                .movie_img {
+                    width: 50%;
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                        object-position: 100% 75%;
+                    }
+                }
+                .movie_info {
+                    width: 50%;
+                    padding: 20px;
+                    .movie_title {
+                        h3 {
+                            text-transform: capitalize;
+                            font-size: 30px;
+                            margin-bottom: 20px;
+                            color: white;
+                        }
+                    }
+                    .movie_description {
+                        p {
+                            font-size: 20px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.show {
+    display: block !important;
+}

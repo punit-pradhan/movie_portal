@@ -1,0 +1,25 @@
+uuid: 495e98ab-6b9c-4586-9071-8abea11fa1d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: ms2xC6rmZLFzZ4wg99RlVAsF3r0E7L7Tc0of-kQ05xg
+id: movie_portal_branding
+theme: movie_portal
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,60 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers" as *;
+
+// Reset default margin, padding, and box-sizing for all elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Enable smooth scrolling for HTML elements
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: $Accent_color !important;
+    border: var(--bs-btn-border-width) solid $Accent_color !important;
+}
+
+.bg-dark,
+.bg-secondary {
+    background-color: $bg-accent-color !important;
+}
+
+.block-menu.navigation.menu--main {
+    margin-right: 20px;
+}
+
+.nav-tabs .nav-link.active,
+.media-library-view--widget .view-header .nav-link.active,
+.media-library-view--widget .view-header a.active,
+.media-library-view--widget .view-header a.is-active,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-item.show .media-library-view--widget .view-header a,
+.media-library-view--widget .view-header .nav-item.show .nav-link,
+.media-library-view--widget .view-header .nav-item.show a {
+    color: $Accent_color;
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    border-color: $Accent_color;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $Accent_color;
+
+    .nav-item {
+        .nav-link {
+            color: $brand-secondary-color;
+        }
+
+        .active {
+            color: $Accent_color;
+        }
+    }
+
+}
+
+.field--name-title.field--type-string {
+    color: $Accent_color !important;
+}

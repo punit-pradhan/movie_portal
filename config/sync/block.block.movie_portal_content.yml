@@ -1,0 +1,22 @@
+uuid: 6b9fad2c-878c-413c-9feb-bcc4a56910f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: urJ_0h4leUKlbxnwVYfAAtDtY__6UndSRQ4LhzQ-Jqg
+id: movie_portal_content
+theme: movie_portal
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

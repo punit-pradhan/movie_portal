@@ -1,0 +1,38 @@
+@use "../partials/importers" as *;
+
+main {
+    background-color: $bg-accent-color;
+    font-family: Montserrat-Regular;
+}
+
+.content {
+    &-item {
+        &__image {
+            padding: 10px;
+            margin: 0 auto;
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        &__content {
+            p {
+                font-size: 28px;
+                color: $Accent_color;
+                margin-bottom: 10px;
+            }
+            div {
+                color: $brand-secondary-color;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .field--name-field-date {
+                .field__label,
+                .field__item {
+                    color: $Accent_color !important;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

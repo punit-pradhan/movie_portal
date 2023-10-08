@@ -1,0 +1,52 @@
+uuid: 7ebe0f44-ba35-4cf1-b5e9-7d71aa3bd1f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.field_date
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_movie_img
+    - image.style.large
+    - node.type.movie
+  module:
+    - datetime
+    - image
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_date:
+    type: datetime_custom
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'd M'
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_movie_img:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

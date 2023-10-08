@@ -1,0 +1,27 @@
+uuid: 13495db0-88bd-49ee-baf0-5d37206db8d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: rt5K6qvHl2XJCDf1ygZRjEAglsJSlbsLHFrOuHkN4T0
+id: movie_portal_main_navigation
+theme: movie_portal
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

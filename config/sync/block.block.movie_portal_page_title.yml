@@ -1,0 +1,26 @@
+uuid: 6f102806-d633-458f-a663-4547eca16d1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: TaL8TTLfzoSckla3lYbTiYbLH1XGm7h9XDr-rUfkOvg
+id: movie_portal_page_title
+theme: movie_portal
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /movies

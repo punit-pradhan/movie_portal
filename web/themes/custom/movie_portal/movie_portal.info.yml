@@ -1,0 +1,22 @@
+name: 'movie portal'
+type: theme
+description: 'movie portal subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^9.4 || ^10'
+'base theme': bootstrap5
+libraries:
+  - movie_portal/global-styling
+  - movie_portal/slider
+  - movie_portal/homepage
+  - movie_portal/movie-render
+  - movie_portal/movie-content
+
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

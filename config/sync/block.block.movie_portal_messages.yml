@@ -1,0 +1,22 @@
+uuid: 6a3c724d-a3a0-4591-82a5-624ed86eecb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: q5yLy6AgzQzEwoFuZS9rX71oF-5oOLAX4iVE0g9uB9U
+id: movie_portal_messages
+theme: movie_portal
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0dc59e06-434d-4f02-9f09-0e74be0c0212
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: zZ70Mx-XkTRYrZKVEyrgDzkdpf1haMRLq4g1rMLv2Wg
+id: movie_portal_help
+theme: movie_portal
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

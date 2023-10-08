@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 3c49c817-2cf0-4ecb-a95a-8ec75b3edcf1
+name: 'movie portal'
+mail: test@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /movies
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

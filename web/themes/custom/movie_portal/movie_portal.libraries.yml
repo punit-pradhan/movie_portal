@@ -1,0 +1,28 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: { }
+      //cdn.lineicons.com/4.0/lineicons.css: {type: external}
+
+slider:
+  version: VERSION
+  css:
+    theme:
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: {type: external}
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: {type: external}
+      css/components/slider.css: { }
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {type: external}
+    js/slick.js: { }
+
+movie-render:
+  css:
+    theme:
+      css/components/movie-render.css: { }
+  js:
+    js/popup.js: { }
+
+movie-content:
+  css:
+    theme:
+      css/components/movie-content.css: { }
