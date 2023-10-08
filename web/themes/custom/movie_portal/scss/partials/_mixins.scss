@@ -20,14 +20,9 @@
   justify-content: center; // Horizontally center child elements
 }
 
-// Shadow mixin
-@mixin shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.65); // Add a box shadow effect
-}
-
 // Mobile mixin with a media query
-@mixin mobile {
-  @media screen and (max-width: 576px) {
-    @content; // Include styles within this mixin for mobile-specific styling
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
   }
 }

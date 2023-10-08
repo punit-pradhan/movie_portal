@@ -82,13 +82,13 @@
 
 
 	<div{{content_attributes}}>
-		<div {{ create_attribute().addClass('content row mb-3') }}>
-			<div {{ create_attribute().addClass('content-item col-4') }}>
+		<div {{ create_attribute().addClass('content') }}>
+			<div {{ create_attribute().addClass('content-item') }}>
 				<div {{ create_attribute().addClass('content-item__image') }}>
 					{{content.field_movie_img.0}}
 				</div>
 			</div>
-			<div {{ create_attribute().addClass('content-item col-8 px-5') }}>
+			<div {{ create_attribute().addClass('content-item') }}>
 				<div {{ create_attribute().addClass('content-item__content') }}>
 					<p>movie description :
 						{{ content.field_description }}

@@ -84,6 +84,14 @@
             letter-spacing: .6rem;
             margin-bottom: 35px;
             font-size: 5.4rem;
+            @include media($Medium) {
+                margin-bottom:2rem;
+                font-size:3.4rem;
+            }
+            @include media($Small) {
+                margin-bottom:2rem;
+                font-size:1.4rem;
+            }
         }
         .tell_me_more_button {
         font-family: Montserrat-Regular;

@@ -3,30 +3,44 @@
 content {
     padding: 0 !important;
 }
+
 .view-display-id-page_1 {
     .view-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         // gap: 20px;
         .views-row {
             position: relative;
             padding: 10px;
             cursor: pointer;
+
+            @include media($Large) {
+                padding: 10px !important;
+            }
+
+            @include media($Small) {
+                width: 100% !important;
+            }
+
             &:hover {
                 .views-field-field-movie-img {
                     .movie-image {
                         background-color: $Accent_color;
                     }
                 }
+
                 .views-field-field-date,
                 .views-field-field-date-1 {
                     display: block;
                 }
             }
+
             .views-field-field-movie-img {
                 .movie-image {
                     background-color: $bg-accent-color;
+
                     img {
                         width: 100%;
                         height: 300px;
@@ -36,33 +50,40 @@ content {
                     }
                 }
             }
+
             .views-field-title {
                 position: absolute;
                 bottom: 10px;
                 left: 30px;
+
                 .movie-title {
                     color: $brand-secondary-color;
                     font-size: 29px;
                 }
             }
+
             .views-field-field-date {
                 display: none;
                 position: absolute;
                 top: 10px;
                 right: 45px;
+
                 .field-content {
                     font-size: 100px;
                     color: $brand-secondary-color;
                 }
             }
+
             .views-field-field-date-1 {
                 display: none;
                 position: absolute;
                 top: 115px;
                 right: 85px;
+
                 .movie-month {
                     color: $brand-secondary-color;
                     font-size: 24px;
+
                     &::after {
                         display: block;
                         content: "";
@@ -73,35 +94,60 @@ content {
                 }
             }
         }
+
         .views-row:nth-child(1),
         .views-row:nth-child(2),
         .views-row:nth-child(3) {
             width: 33.33%;
             padding-top: 0px !important;
+
+            @include media($Large) {
+                width: 50%;
+            }
         }
+
         .views-row:nth-child(4),
         .views-row:nth-child(5) {
             width: 50%;
         }
+
         .views-row:nth-child(6),
         .views-row:nth-child(7),
         .views-row:nth-child(8),
         .views-row:nth-child(9) {
             width: 25%;
             padding-bottom: 20px;
+
+            @include media($Large) {
+                width: 50%;
+            }
         }
+
         .views-row:nth-child(1),
         .views-row:nth-child(4),
         .views-row:nth-child(6) {
             padding-left: 20px;
+
+            @include media($Large) {
+                padding-left: 20px;
+            }
         }
+
         .views-row:nth-child(3),
         .views-row:nth-child(5),
         .views-row:nth-child(9) {
             padding-right: 20px;
         }
+
+        .views-row:nth-child(9) {
+            @include media($Large) {
+                width: 100%;
+            }
+            
+        }
     }
 }
+
 .views-field-field-description {
     right: 0;
     top: 0;
@@ -114,10 +160,20 @@ content {
 
     .field-content {
         .movie_popup {
+            top: 40%;
+            left: 15%;
             width: 70%;
-            position: relative;
-            margin-top: 18% !important;
-            margin: auto;
+            position: absolute;
+            @include media($Medium) {
+                top: 25%;
+                left: 25%;
+                width: 50%;
+            }
+            @include media($Small) {
+                top: 25%;
+                left: 10%;
+                width: 80%;
+            }
             .close_btn {
                 font-size: 22px;
                 top: -10px;
@@ -125,21 +181,32 @@ content {
                 color: white;
                 position: absolute;
             }
+
             .movie_card {
                 background-color: $bg-accent-color;
                 display: flex;
                 height: 300px;
+                @include media($Large) {
+                    height: auto;
+                    flex-direction: column;
+                }
                 .movie_img {
                     width: 50%;
+                    @include media($Medium) {
+                        width: 100%;
+                    }
                     img {
-                        height: 300px;
                         object-fit: cover;
                         object-position: 100% 75%;
                     }
                 }
+
                 .movie_info {
                     width: 50%;
                     padding: 20px;
+                    @include media($Medium) {
+                        width: 100%;
+                    }
                     .movie_title {
                         h3 {
                             text-transform: capitalize;
@@ -148,6 +215,7 @@ content {
                             color: white;
                         }
                     }
+
                     .movie_description {
                         p {
                             font-size: 20px;
@@ -159,6 +227,7 @@ content {
         }
     }
 }
+
 .show {
     display: block !important;
 }
