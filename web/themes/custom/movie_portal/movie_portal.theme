@@ -5,7 +5,7 @@
 function movie_portal_preprocess_html(&$variables) {
     // Get current node url.
     $node_url = \Drupal::request()->getRequestUri();
-  
+    
     // Check whether the node url is of required node or not.
     if ($node_url === '/movies') {
 

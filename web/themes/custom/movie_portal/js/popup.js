@@ -1,17 +1,39 @@
-(function ($, Drupal) {
-  Drupal.behaviors.popup = {
+(function ($, Drupal, once) {
+  Drupal.behaviors.moviePage = {
     attach: function (context, settings) {
-      // Function to show the description when clicking on the image
-      $(".views-field-field-movie-img", context).on("click", function () {
-        // Find the closest sibling with the class "views-field-field-description" and add the "show" class to it
-        $(this).closest(".views-row").find(".views-field-field-description").addClass("show");
+      let modalDiv = $("#expanded_popup");
+      let closeTag = $("#close_btn");
+      let expandedImage = $("#expandedImage");
+      let movieTitle = $("#movieTitle");
+      let modalInfo = $("#modalInfo");
+
+      once("popUp", ".view-display-id-page_1", context).forEach((element) => {
+        const views = $(".view-display-id-page_1");
+        
+        let on_click_img = (e) => {
+          if (e.target.tagName === "IMG") {
+            let element = $(e.target).parent();
+            let title = element.find("h1").text();
+            let image = $(e.target).attr("src");
+            let description = element.find("h3").text();
+            modalDiv.css("display", "block");
+            expandedImage.attr("src", image);
+            movieTitle.text(title);
+            modalInfo.text(description);
+          } else {
+            return;
+          }
+        };
+
+        views.on("click", on_click_img);
       });
 
-      // Function to hide the description when clicking on the close button
-      $(".close_btn", context).on("click", function () {
-        // Find the closest ".views-field-field-description" element and remove the "show" class from it
-        $(this).closest(".views-field-field-description").removeClass("show");
+      once("popUp", ".expanded", context).forEach((element) => {
+        let handleCloseClick = () => {
+          modalDiv.css("display", "none");
+        };
+        closeTag.on("click", handleCloseClick);
       });
     },
   };
-})(jQuery, Drupal);
+})(jQuery, Drupal, once);
