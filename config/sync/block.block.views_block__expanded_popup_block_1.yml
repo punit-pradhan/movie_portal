@@ -1,22 +1,22 @@
-uuid: 25de9f31-af92-4f03-b7c9-5647d8b5f60c
+uuid: aa226a73-3c75-4c46-b103-cb32116633cb
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.slick_slider
+    - views.view.expanded_popup
   module:
     - system
     - views
   theme:
     - movie_portal
-id: views_block__slick_slider_block_1
+id: views_block__expanded_popup_block_1
 theme: movie_portal
-region: header
-weight: -7
+region: content
+weight: -3
 provider: null
-plugin: 'views_block:slick_slider-block_1'
+plugin: 'views_block:expanded_popup-block_1'
 settings:
-  id: 'views_block:slick_slider-block_1'
+  id: 'views_block:expanded_popup-block_1'
   label: ''
   label_display: visible
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /movies
+    pages: "/movies\r\n/custom_view_mode"

@@ -12,5 +12,10 @@ function movie_portal_preprocess_html(&$variables) {
       // Attach the custom_theme/custom-render library to the page.
       $variables['#attached']['library'][] = 'movie_portal/movie-render';
     }
+    elseif ($node_url === '/custom_view_mode') {
+
+      // Attach the custom_theme/custom-render library to the page.
+      $variables['#attached']['library'][] = 'movie_portal/view-mode';
+    }
   }
 ?>

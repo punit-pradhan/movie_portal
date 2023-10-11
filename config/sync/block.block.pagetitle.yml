@@ -1,17 +1,15 @@
-uuid: 6f102806-d633-458f-a663-4547eca16d1e
+uuid: 84b88635-f1bf-4047-ab37-5be07ae39827
 langcode: en
 status: true
 dependencies:
   module:
-    - system
+    - node
   theme:
     - movie_portal
-_core:
-  default_config_hash: TaL8TTLfzoSckla3lYbTiYbLH1XGm7h9XDr-rUfkOvg
-id: movie_portal_page_title
+id: pagetitle
 theme: movie_portal
 region: content
-weight: -5
+weight: -2
 provider: null
 plugin: page_title_block
 settings:
@@ -20,7 +18,10 @@ settings:
   label_display: '0'
   provider: core
 visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: /movies
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      movie: movie

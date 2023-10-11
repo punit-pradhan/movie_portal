@@ -1,24 +1,26 @@
-uuid: 7ebe0f44-ba35-4cf1-b5e9-7d71aa3bd1f4
+uuid: 42688ccc-2e9b-4f3f-aed4-3fffaaeb741d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.custom_view_mode
     - field.field.node.movie.field_date
     - field.field.node.movie.field_description
     - field.field.node.movie.field_movie_img
     - node.type.movie
+    - responsive_image.styles.custom
   module:
     - datetime
-    - image
+    - responsive_image
     - user
-id: node.movie.default
+id: node.movie.custom_view_mode
 targetEntityType: node
 bundle: movie
-mode: default
+mode: custom_view_mode
 content:
   field_date:
     type: datetime_custom
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
       date_format: 'd M'
@@ -33,13 +35,11 @@ content:
     weight: 102
     region: content
   field_movie_img:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: custom
       image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 101
     region: content

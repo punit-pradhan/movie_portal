@@ -26,3 +26,10 @@ movie-content:
   css:
     theme:
       css/components/movie-content.css: { }
+
+view-mode:
+  css:
+    theme:
+      css/components/custom-view-mode.css: { }
+  js:
+    js/popup2.js: { }

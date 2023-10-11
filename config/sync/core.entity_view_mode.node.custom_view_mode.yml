@@ -1,0 +1,10 @@
+uuid: 753fd2d1-ccf5-43f3-ada0-6056bdbbe69b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.custom_view_mode
+label: 'custom view mode'
+targetEntityType: node
+cache: true
