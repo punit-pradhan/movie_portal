@@ -1,0 +1,58 @@
+@use "../partials/importers" as *;
+
+main {
+    background-color: $bg-accent-color;
+    font-family: Montserrat-Regular;
+}
+
+.content {
+    display: flex;
+    @include media($Large) {
+        flex-direction: column;
+    }
+    &-item {
+        width: 50%;
+        @include media($Large) {
+            width: 100%;
+        }
+        &__image {
+            padding: 20px 20px 20px 0;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            padding: 20px 0 20px 20px;
+            p {
+                font-size: 28px;
+                color: $Accent_color;
+                margin-bottom: 10px;
+                @include media(Small) {
+                    font-size: 24px;
+                }
+            }
+            div {
+                color: $brand-secondary-color;
+                font-size: 24px;
+                margin-bottom: 20px;
+                @include media(Small) {
+                    font-size: 18px;
+                }
+            }
+            .field--name-field-date {
+                .field__label,
+                .field__item {
+                    color: $Accent_color !important;
+                    font-size: 22px;
+                    @include media(Small) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

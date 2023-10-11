@@ -1,0 +1,22 @@
+uuid: 90fa252d-e2f7-499d-8636-a0f02e2f46c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: rCbqRFYYF7ODS_uLGkShbVBuS41scOMCQHqUNiJnNvs
+id: movie_portal_powered_by_drupal
+theme: movie_portal
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: aa226a73-3c75-4c46-b103-cb32116633cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.expanded_popup
+  module:
+    - system
+    - views
+  theme:
+    - movie_portal
+id: views_block__expanded_popup_block_1
+theme: movie_portal
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:expanded_popup-block_1'
+settings:
+  id: 'views_block:expanded_popup-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/movies\r\n/custom_view_mode"

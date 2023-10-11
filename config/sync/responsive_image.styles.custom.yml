@@ -1,0 +1,40 @@
+uuid: 90058d3e-46eb-452f-a23d-9ec3f94646e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.movie_img
+  theme:
+    - movie_portal
+id: custom
+label: custom
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_img
+    breakpoint_id: movie_portal.screen.xxl-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_img
+    breakpoint_id: movie_portal.screen.xl-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_img
+    breakpoint_id: movie_portal.screen.lg-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: movie_portal.screen.md-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_img
+    breakpoint_id: movie_portal.screen.sm-min
+    multiplier: 1x
+breakpoint_group: movie_portal.screen
+fallback_image_style: large

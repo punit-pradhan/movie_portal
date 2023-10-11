@@ -1,0 +1,20 @@
+uuid: 4a97cdc3-4f5d-4a71-aa5e-3ce71d14eac9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: 6I9zV12-f-DV9jsmcwyNoM9Apol7Oyt2ajVF3Eo5u3c
+id: movie_portal_local_actions
+theme: movie_portal
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

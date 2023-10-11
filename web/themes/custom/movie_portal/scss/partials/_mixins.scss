@@ -1,0 +1,28 @@
+// Import variables from "./variables"
+@use "./variables" as *;
+
+// Image mixin
+@mixin image {
+  display: block; // Display as a block-level element
+  width: 100%; // Make the image responsive by setting width to 100%
+  height: auto; // Maintain aspect ratio
+}
+
+// Flex mixin
+@mixin flex {
+  display: flex; // Set the element as a flex container
+}
+
+// Flex center mixin
+@mixin flex-center {
+  display: flex; // Set the element as a flex container
+  align-items: center; // Vertically center child elements
+  justify-content: center; // Horizontally center child elements
+}
+
+// Mobile mixin with a media query
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

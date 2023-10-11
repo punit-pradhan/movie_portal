@@ -1,0 +1,15 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers" as *;
+
+// Styles for creating a flex container
+.flex {
+    display: flex; // Use flexbox for layout
+}
+
+.region-content {
+    padding: 0 !important;
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 0 !important;
+}

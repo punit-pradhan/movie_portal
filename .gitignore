@@ -20,6 +20,7 @@
 /web/sites/*/private/.htaccess
 /web/themes/custom/*/node_modules
 /web/themes/custom/*/public
+/web/modules/contrib
 
 # IDE and text editor files
 *.sublime-project

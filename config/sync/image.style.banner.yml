@@ -1,0 +1,15 @@
+uuid: 8bba1a94-e686-496d-9e7f-c840f3b3fcb3
+langcode: en
+status: true
+dependencies: {  }
+name: banner
+label: 'banner (600 x 160)'
+effects:
+  b1733094-0856-45c7-9321-1003eab684fa:
+    uuid: b1733094-0856-45c7-9321-1003eab684fa
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 600
+      height: 160
+      anchor: center-center

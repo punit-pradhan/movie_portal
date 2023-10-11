@@ -1,0 +1,22 @@
+uuid: 434253b2-905a-433d-bb69-074ad7f2d330
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: 1oYIJvv3_DliYFCJuTgzl6NSG5Fvi1l66c8Lh84kUD8
+id: movie_portal_breadcrumbs
+theme: movie_portal
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: f30e274f-6432-4f86-ba8a-5c7c02dd51d5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - movie_portal
+_core:
+  default_config_hash: G7fLo_01K_zrgrJHBX3bRUxp1OyXks1xiC9SJRCSQO0
+id: movie_portal_local_tasks
+theme: movie_portal
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
